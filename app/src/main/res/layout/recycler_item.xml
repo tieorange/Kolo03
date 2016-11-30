@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+    >
+
+  <ImageView
+      android:id="@+id/list_item_like_button"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      tools:src="@mipmap/ic_launcher"
+      />
+  <ImageView
+      android:id="@+id/list_item_image"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_marginEnd="30dp"
+      android:layout_marginStart="20dp"
+      tools:src="@mipmap/ic_launcher"
+      />
+
+  <TextView
+      android:id="@+id/list_item_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="5dp"
+      android:layout_toEndOf="@id/list_item_image"
+      android:layout_toStartOf="@id/list_item_like_button"
+      android:textAlignment="center"
+      android:textColor="#900"
+      android:textSize="20sp"
+      tools:text="text"
+      />
+
+  <TextView
+      android:id="@+id/list_item_description"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/list_item_text"
+      android:layout_toEndOf="@id/list_item_image"
+      android:layout_toStartOf="@id/list_item_like_button"
+      android:textAlignment="center"
+      tools:text="description"
+      />
+
+</RelativeLayout >
